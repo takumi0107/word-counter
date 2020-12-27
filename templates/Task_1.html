@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Task 1
+{% endblock %}
+
+{% block content %}
+<center>
+<h1>TASK 1</h1>
+<h3>Write at least 150 words.</h3>
+<form action="/wow" method="post">{% csrf_token %}
+  <textarea name="content" cols="40" rows="20"></textarea>
+  <br>
+  <button type="submit">Submit</button>
+{% endblock %}

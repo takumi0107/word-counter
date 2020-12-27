@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+results
+{% endblock %}
+
+{% block content %}
+<center>
+<h2>There are <strong>{{ count }}</strong> words.</h2>
+<br><hr>
+<h3>↓contents</h3>
+  {{ content }}
+<br><br><hr>
+<h3>↓the word you used a lot </h3>
+{{ word_dict }}
+
+</center>
+{% endblock %}
